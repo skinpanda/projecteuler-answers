@@ -20,5 +20,5 @@ fibonacci = fibonacci_sequence(4000000)
 # First even Fibonacci number is 2 at fibonacci_list[2] (third on the list)
 # Hence the list slicing [2::3]
 
-print(sum(fibonacci[2::3]))
+print("Answer: ", sum(fibonacci[2::3]))
 
