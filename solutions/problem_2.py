@@ -21,4 +21,3 @@ fibonacci = fibonacci_sequence(4000000)
 # Hence the list slicing [2::3]
 
 print(sum(fibonacci[2::3]))
-
