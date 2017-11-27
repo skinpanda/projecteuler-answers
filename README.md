@@ -10,8 +10,8 @@ Link to Project Euler: https://projecteuler.net
 
 How to use:
 
-1. Run index.py
-2. Use "help" to get started
+1. Run index.py (https://github.com/skinpanda/projecteuler-answers/blob/master/index.py)
+2. Use "help" to get started.
 3. To view code, use view <space> [problem number].
 4. To run code, use run <space> [problem number].
-5. Use q to quit
+5. Use q to quit.
