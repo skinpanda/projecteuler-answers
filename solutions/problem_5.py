@@ -21,4 +21,4 @@ SmallestMultiple = 1
 for i in range(11, 21):
   SmallestMultiple = lcm(SmallestMultiple, i)
 
-print(SmallestMultiple)
+print("Answer: ", SmallestMultiple)
