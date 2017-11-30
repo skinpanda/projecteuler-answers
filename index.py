@@ -34,11 +34,11 @@ while True:
     if s == "help":
         indexhelp()
 
-    if "view" in s:
+    if "view " in s:
         pnum = s.replace("view ", '')
         viewcode(pnum)
 
-    if "run" in s:
+    if "run " in s:
         pnum = s.replace("run ", '')
         runcode(pnum)
 
