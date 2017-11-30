@@ -4,7 +4,9 @@ import os
 
 # Open file containing data
 
-file = open(os.getcwd()+"/resources/euler", "r")
+abspath = os.path.abspath(os.path.dirname(__file__))
+file = open(abspath + "/resources/problem_8_data.txt", "r")
+
 with file as f:
     number = "".join([num.replace("\n", "") for num in f]) # remove newline character
 
