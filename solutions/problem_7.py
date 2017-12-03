@@ -1,20 +1,23 @@
+# Title: 10001st prime
+
 from itertools import count
 import math
-import time
 
-p = 2
-s = time.time()
+
+PrimeCount = 2  # 2 and 3 are already counted
+
+# Test for primality (from 2 to sqrt(i))
+
 for i in count(5, 2):
-  test = True
-  for j in range(2, int(math.sqrt(i))+1):
-    if i%j == 0:
-      test = False
-      break
+    IsPrime = True
+    for j in range(2, int(math.sqrt(i))+1):
+        if i % j == 0:
+            IsPrime = False
+            break
   
-  if test:
-    p += 1
-  if p == 10001:
-    break
+    if IsPrime:
+        PrimeCount += 1
+    if PrimeCount == 10001:
+        break
   
-print(i)
-print(time.time()-s)  
+print("Answer: ", i)

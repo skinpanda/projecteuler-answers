@@ -10,19 +10,19 @@ print("Press q to quit")
 # How to use
 
 
-def indexhelp():
+def index_help():
     message = "To view code, use view <space> [problem number]." \
               "\nTo run code, use run <space> [problem number]."
     print(message)
 
 
-def viewcode(n):
+def view_code(n):
     problem = "solutions/problem_" + n + ".py"
     file = open(problem, "r")
     print(file.read())
 
 
-def runcode(n):
+def run_code(n):
     problem = "solutions/problem_" + n + ".py"
     os.system("python3 " + problem)
 
@@ -32,15 +32,15 @@ while True:
     s = input('-->')
 
     if s == "help":
-        indexhelp()
+        index_help()
 
     if "view " in s:
-        pnum = s.replace("view ", '')
-        viewcode(pnum)
+        ProblemNum = s.replace("view ", '')
+        view_code(ProblemNum)
 
     if "run " in s:
-        pnum = s.replace("run ", '')
-        runcode(pnum)
+        ProblemNum = s.replace("run ", '')
+        run_code(ProblemNum)
 
     if s == "q" or s == "Q":
         break
