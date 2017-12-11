@@ -38,4 +38,4 @@ for i in range(20):
                     k = DataArray[i][j] * DataArray[i + 1][j + 1] * DataArray[i + 2][j + 2] * DataArray[i + 3][j + 3]
                     Max = compare(k, Max)
 
-print(Max)
+print("Answer: ", Max)
