@@ -6,5 +6,10 @@ class Parser:
         file = open(self.directory, "r")
         number = [num.replace("\n", "") for num in file]
         number = [num.split(" ") for num in number]
-
+        return number
+    
+    def str_to_int(self):
+        file = open(self.directory, "r")
+        number = [num.replace("\n", "") for num in file]
+        number = [int(num) for num in number]
         return number

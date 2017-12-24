@@ -1,7 +1,7 @@
 # Title: Largest product in a grid
 
 import os
-from Text_Module import Parser
+from Module import Parser
 
 AbsPath = os.path.abspath(os.path.dirname(__file__))
 DataDir = AbsPath + "/resources/problem_11_data.txt"
