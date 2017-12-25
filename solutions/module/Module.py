@@ -32,3 +32,22 @@ class Collatz:
                 self.sequence.append(self.start)
 
         return self.sequence
+
+
+class Pascal:
+    def __init__(self, size=1):
+        self.size = size
+        self.row = size
+        self.line = [1]
+
+    def get_line(self, row):
+        self.line = [1]
+
+        for i in range(row):
+            self.line.append(self.line[i] * (row - i) // (i + 1))
+
+        return self.line
+
+    def get_table(self):
+        for k in range(self.size + 1):
+            print(self.get_line(k))
